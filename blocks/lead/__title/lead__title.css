@@ -1,0 +1,27 @@
+.lead__title {
+  margin: 0;
+  font-size: 6rem;
+  line-height: 1.1;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+  grid-area: text;
+}
+
+@media (max-width: 1199px) {
+  .lead__title {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .lead__title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .lead__title {
+    font-size: 2.25rem;
+  }
+}

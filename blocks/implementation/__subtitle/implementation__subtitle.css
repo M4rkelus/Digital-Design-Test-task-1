@@ -1,0 +1,20 @@
+.implementation__subtitle {
+  margin: 0 auto;
+  background-color: var(--color-background-3);
+  min-width: 1140px;
+  padding: 10px 0;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--color-text-1);
+  -webkit-transition: max-width 0.3s ease-in-out;
+  -o-transition: max-width 0.3s ease-in-out;
+  transition: max-width 0.3s ease-in-out;
+  text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .implementation__subtitle {
+    min-width: 100%;
+  }
+}

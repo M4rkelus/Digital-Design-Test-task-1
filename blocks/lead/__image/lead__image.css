@@ -1,0 +1,4 @@
+.lead__image {
+  background: no-repeat url(../../../images/lead-img.png) center center/cover;
+  grid-area: image;
+}

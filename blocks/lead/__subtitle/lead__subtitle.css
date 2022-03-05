@@ -1,0 +1,21 @@
+.lead__subtitle {
+  margin: 20px 0 0;
+  font-size: 1.5rem;
+  -webkit-transition: max-width 0.3s ease-in-out;
+  -o-transition: max-width 0.3s ease-in-out;
+  transition: max-width 0.3s ease-in-out;
+  grid-area: text;
+}
+
+@media (max-width: 1199px) {
+  .lead__subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .lead__subtitle {
+    margin-top: 9px;
+    font-size: 1.125rem;
+  }
+}

@@ -1,0 +1,9 @@
+.section-content__accent {
+  margin: 16px 0 0;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px 0.5px rgba(71, 71, 71, 0.658);
+  font-size: 1.15rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--color-text-4);
+}

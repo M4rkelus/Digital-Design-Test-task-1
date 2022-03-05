@@ -1,0 +1,18 @@
+.footer__links {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-transition: grid-gap 0.3s ease-in-out;
+  -o-transition: grid-gap 0.3s ease-in-out;
+  transition: grid-gap 0.3s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .footer__links {
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5px 35px;
+  }
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каскадные таблицы стилей CSS</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <a class="header__link link" href="/">
+          <img class="header__logo" src="./images/header-logo.svg" alt="Лого" />
+          css
+        </a>
+
+        <nav aria-label="Навигация">
+          <ul class="header__nav-links">
+            <li class="header__nav-link">
+              <a class="link" href="#intro">Понятие CSS</a>
+            </li>
+            <li class="header__nav-link">
+              <a class="link" href="#implementation">Внедрение CSS</a>
+            </li>
+            <li class="header__nav-link">
+              <a class="link" href="#attribute">Атрибут Stile</a>
+            </li>
+            <li class="header__nav-link">
+              <a class="link" href="#tag">Тег STILE</a>
+            </li>
+            <li class="header__nav-link">
+              <a class="link" href="#css-file">CSS файл</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="content">
+        <section class="lead">
+          <div class="lead__image"></div>
+          <div class="lead__heading-group">
+            <h1 class="lead__title">Каскадные таблицы стилей CSS</h1>
+            <p class="lead__subtitle">
+              Aбстракция, в&nbsp;которой внешний вид Web-документа определяется
+              отдельно от&nbsp;его содержания
+            </p>
+          </div>
+        </section>
+
+        <section id="intro" class="intro" aria-label="Понятие CSS">
+          <div class="section-content">
+            <article class="section-content__text">
+              <h2 class="section-content__title">
+                CSS (Cascading Style&nbsp;Sheets)
+              </h2>
+              <p class="section-content__paragraph">
+                Каскадные таблицы стилей&nbsp;&mdash; это свод стилевых
+                описаний, тех или иных HTML тегов (далее элементов HTML),
+                который может быть применён:
+              </p>
+              <ul class="section-content__list">
+                <li>к&nbsp;отдельному тегу&nbsp;&mdash; элементу, или</li>
+                <li>
+                  одновременно ко&nbsp;всем идентичным элементам на&nbsp;всех
+                  страницах сайта.
+                </li>
+              </ul>
+              <p class="section-content__paragraph">
+                CSS по&nbsp;сути своего рода дополнение к&nbsp;HTML, которое
+                значительно расширяет его возможности.
+              </p>
+            </article>
+
+            <img
+              class="section-content__image"
+              src="./images/intro-img.png"
+              alt=""
+            />
+          </div>
+        </section>
+
+        <section
+          id="implementation"
+          class="implementation"
+          aria-label="Внедрение CSS в HTML документ"
+        >
+          <h2 class="implementation__title">
+            Внедрение CSS в&nbsp;HTML документ
+          </h2>
+          <p class="implementation__subtitle">
+            Осуществить данную задачу можно тремя способами:
+          </p>
+          <ol class="table">
+            <li class="table__card">
+              Написать стилевое описание непосредственно в&nbsp;самом элементе.
+              Такой способ хорош лишь в&nbsp;том случае если таковой элемент
+              один единственный в&nbsp;HTML документе который нуждается
+              в&nbsp;отдельном стилевом описании.
+            </li>
+            <li class="table__card">
+              Написать стилевое описание для всех идентичных элементов HTML
+              документа. Такой способ оправдывает себя, если стиль страницы
+              принципиально отличается от&nbsp;общего дизайна сайта (группы
+              взаимосвязанных страниц).
+            </li>
+            <li class="table__card">
+              Вынести стилевое описание элементов HTML&nbsp;в отдельный файл
+              CSS. Это позволит управлять дизайном всего сайта целиком, каждой
+              страницей сайта в&nbsp;которой указанно обращение к&nbsp;CSS
+              файлу. Этот способ является наиболее эффективным использованием
+              таблицы каскадных стилей.
+            </li>
+          </ol>
+        </section>
+
+        <section id="attribute" class="attribute" aria-label="Атрибут STYLE">
+          <div class="section-content">
+            <article class="section-content__text">
+              <h2 class="section-content__title">Атрибут STYLE</h2>
+              <div>
+                <p class="section-content__paragraph">
+                  Практически каждый HTML тег имеет атрибут
+                  <span class="section-content__code">style</span>, который
+                  говорит о&nbsp;том, что к&nbsp;этому тегу применяется некое
+                  стилевое описание.
+                </p>
+                <p class="section-content__accent">Пишется так:</p>
+                <p class="section-content__paragraph">
+                  <span class="section-content__code"
+                    >&lt;p&nbsp;style=&quot;&quot;&gt;</span
+                  >это параграф с&nbsp;индивидуальным стилем<span
+                    class="section-content__code"
+                    >&lt;/p&gt;
+                  </span>
+                </p>
+                <p class="section-content__accent">Пример:</p>
+                <p class="section-content__paragraph">
+                  <span class="section-content__code">
+                    &lt;p&nbsp;style=&quot;color: #ff0000; font-size:
+                    12px&quot;&gt;</span
+                  >это параграф с&nbsp;индивидуальным стилем<span
+                    class="section-content__code"
+                    >&lt;/p&gt;
+                  </span>
+                </p>
+                <p class="section-content__paragraph">
+                  НО, такой способ внедрения CSS хорош лишь в&nbsp;том случае
+                  если требуется задать определенный стиль малому числу HTML
+                  элементов.
+                </p>
+              </div>
+            </article>
+            <img
+              class="section-content__image"
+              src="./images/example.png"
+              alt="Пример"
+            />
+          </div>
+        </section>
+
+        <section id="tag" class="tag" aria-label="Тег STYLE">
+          <div class="section-content">
+            <article class="section-content__text">
+              <h2 class="section-content__title">Тег &lt;STYLE&gt;</h2>
+              <p class="section-content__paragraph">
+                Для того, что&nbsp;бы описать необходимые элементы одновременно
+                на всей странице в&nbsp;заголовок HTML документа внедряют тег
+                <span class="section-content__code"
+                  >&lt;style&gt;&lt;/style&gt;</span
+                >
+                (не&nbsp;путайте с&nbsp;одноименным атрибутом) в&nbsp;котором
+                и&nbsp;происходит описание нужных нам элементов.
+              </p>
+              <p class="section-content__paragraph">
+                В&nbsp;данном случае стили описываются в&nbsp;заголовке
+                документа между тегами HEAD!
+              </p>
+              <p class="section-content__paragraph">
+                Внутри тега
+                <span class="section-content__code"
+                  >&lt;style&gt;&lt;/style&gt;</span
+                >
+                идет непосредственное объявление стилей тех или иных HTML
+                элементов согласно следующему синтаксису.
+              </p>
+              <p class="section-content__paragraph">
+                Если в&nbsp;блоке объявления стилей указывается несколько
+                свойств элемента, то&nbsp;они между собой разделяются точкой
+                с&nbsp;запятой.
+              </p>
+            </article>
+
+            <div class="tag__cards">
+              <figure class="tag__card">
+                <img class="tag__image" src="./images/tag.png" alt="" />
+                <figcaption>Пример описания стилей</figcaption>
+              </figure>
+
+              <figure class="tag__card">
+                <img class="tag__image" src="./images/tag2.png" alt="" />
+                <figcaption>
+                  Использование тегов для которых описан стиль
+                </figcaption>
+              </figure>
+
+              <figure class="tag__card tag__card_large">
+                <img
+                  class="tag__image"
+                  src="./images/syntax-image.png"
+                  alt=""
+                />
+                <figcaption>Базовый синтаксис CSS</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="css-file"
+          class="css-file"
+          aria-label="CSS в отдельном внешнем файле"
+        >
+          <div class="section-content">
+            <article class="section-content__text">
+              <h2 class="section-content__title">
+                CSS в&nbsp;отдельном внешнем файле
+              </h2>
+              <ol class="section-content__list">
+                <li>
+                  Открываем блокнот (или другой редактор) и&nbsp;пишем стилевые
+                  правила.
+                </li>
+                <li>
+                  Сохраняем файл с&nbsp;расширением
+                  <span class="section-content__code">*.css</span> (обычно файл
+                  со&nbsp;стилями называют
+                  <span class="section-content__code">style.css</span>).
+                </li>
+                <li>Подключить файл CSS к&nbsp;web&nbsp;&mdash; странице:</li>
+              </ol>
+              <p class="section-content__paragraph">
+                Делается это с&nbsp;помощью тега
+                <span class="section-content__code">&lt;LINK&gt;</span>
+                (связь). Тег
+                <span class="section-content__code">&lt;LINK&gt;</span>
+                является своего рода ссылкой, только предназначенной не&nbsp;для
+                пользователей, а&nbsp;для программ обозревателей (браузеров).
+                Так как
+                <span class="section-content__code">&lt;LINK&gt;</span> несёт
+                в&nbsp;себе исключительно служебную информацию
+                он&nbsp;располагается в заголовке HTML документа между тегами
+                <span class="section-content__code"
+                  >&lt;head&gt;&lt;/head&gt;</span
+                >
+                и&nbsp;не&nbsp;выводится браузерами на&nbsp;экран.
+              </p>
+            </article>
+
+            <div class="section-content__text section-content__text_colored">
+              <p class="section-content__accent">
+                Тег &lt;link&gt; имеет атрибуты:
+              </p>
+              <ul class="section-content__list">
+                <li>href&nbsp;&mdash; Путь к&nbsp;файлу.</li>
+                <li>
+                  rel&nbsp;&mdash; Определяет отношения между текущим документом
+                  и&nbsp;файлом, на&nbsp;который делается ссылка.
+                  <ul class="section-content__list">
+                    <li>
+                      shortcuticon&nbsp;&mdash; Определяет, что подключаемый
+                      файл является иконкой.
+                    </li>
+                    <li>
+                      stylesheet&nbsp;&mdash; Определяет, что подключаемый файл
+                      содержит таблицу стилей.
+                    </li>
+                    <li>
+                      application/rss+xml&nbsp;&mdash; Файл в&nbsp;формате XML
+                      для описания ленты новостей.
+                    </li>
+                    <li>
+                      type&nbsp;&mdash; MIME тип данных подключаемого файла.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <p class="section-content__accent">
+                Cсылка приобретает следующий вид:
+              </p>
+
+              <p class="section-content__paragraph">
+                <span class="section-content__code">
+                  &lt;link rel=&quot;stylesheet&quot;
+                  href=&quot;mystyle.css&quot; type=&quot;text/css&quot;&gt;
+                </span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <a href="#" title="Вернуться к началу" class="up-button"></a>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__content">
+          <nav aria-label="Полезные ссылки">
+            <ul class="footer__links">
+              <li>
+                <a
+                  class="footer__link link"
+                  href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/CSS_basics"
+                  target="_blank"
+                  >mdn</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer__link link"
+                  href="http://htmlbook.ru/samcss"
+                  target="_blank"
+                  >htmlbook</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer__link link"
+                  href="https://www.w3schools.com/css/"
+                  target="_blank"
+                  >w3schools</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer__link link"
+                  href="https://css-live.ru/"
+                  target="_blank"
+                  >css-live</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <p class="footer__copyright">&copy; 2022. Марк Пирогов</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

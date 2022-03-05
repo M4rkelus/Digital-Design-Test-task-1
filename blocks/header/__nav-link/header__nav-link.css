@@ -1,0 +1,14 @@
+.header__nav-link {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .header__nav-link {
+    font-size: 0.7rem;
+  }
+}

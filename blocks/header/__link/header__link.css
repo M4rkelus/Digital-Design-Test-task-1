@@ -1,0 +1,21 @@
+.header__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  max-height: 76px;
+  text-transform: uppercase;
+  font-size: inherit;
+  font-size: 4rem;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -o-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+
+@media (max-width: 575px) {
+  .header__link {
+    font-size: 2rem;
+  }
+}

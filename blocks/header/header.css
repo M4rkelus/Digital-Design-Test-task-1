@@ -1,0 +1,48 @@
+.header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 71px;
+  max-width: 1140px;
+  -webkit-transition: max-width 0.3s ease-in-out;
+  -o-transition: max-width 0.3s ease-in-out;
+  transition: max-width 0.3s ease-in-out;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+}
+
+@media (min-width: 1200px) {
+  .header {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header {
+    max-width: 940px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .header {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    max-width: 340px;
+  }
+}

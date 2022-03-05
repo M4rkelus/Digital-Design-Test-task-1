@@ -1,0 +1,63 @@
+/* Page styles */
+@import url(../vendor/normalize.css);
+@import url(../fonts/open_sans/open_suns.css);
+@import url(../variables/variables.css);
+
+@import url(../blocks/page/page.css);
+
+@import url(../blocks/link/link.css);
+@import url(../blocks/up-button/up-button.css);
+
+@import url(../blocks/section-content/section-content.css);
+@import url(../blocks/section-content/__text/section-content__text.css);
+@import url(../blocks/section-content/__text/_colored/section-content__text_colored.css);
+@import url(../blocks/section-content/__title/section-content__title.css);
+@import url(../blocks/section-content/___paragraph/section-content__paragraph.css);
+@import url(../blocks/section-content/__list/section-content__list.css);
+@import url(../blocks/section-content/__image/section-content__image.css);
+@import url(../blocks/section-content/__accent/section-content__accent.css);
+@import url(../blocks/section-content/__code/section-content__code.css);
+
+/* Header section*/
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__logo/hearer__logo.css);
+@import url(../blocks/header/__nav-links/header__nav-links.css);
+@import url(../blocks/header/__nav-link/header__nav-link.css);
+
+/* Lead section */
+@import url(../blocks/lead/lead.css);
+@import url(../blocks/lead/__image/lead__image.css);
+@import url(../blocks/lead/__heading-group/lead__heading-group.css);
+@import url(../blocks/lead/__title/lead__title.css);
+@import url(../blocks/lead/__subtitle/lead__subtitle.css);
+
+/* Intro section */
+@import url(../blocks/intro/intro.css);
+
+/* Implimentation section*/
+@import url(../blocks/implementation/implementation.css);
+@import url(../blocks/implementation/__title/implementation__title.css);
+@import url(../blocks/implementation/__subtitle/implementation__subtitle.css);
+
+@import url(../blocks/table/table.css);
+
+/* Attribute section*/
+@import url(../blocks/attribute/attribute.css);
+
+/* Tag section */
+@import url(../blocks/tag/tag.css);
+@import url(../blocks/tag/__cards/tag__cards.css);
+@import url(../blocks/tag/__card/tag__card.css);
+@import url(../blocks/tag/__card/_large/tag__card_large.css);
+@import url(../blocks/tag/__image/tag__image.css);
+
+/* Css-file section */
+@import url(../blocks/css-file/css-file.css);
+
+/* Footer section */
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__content/footer__content.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__links/footer__links.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);

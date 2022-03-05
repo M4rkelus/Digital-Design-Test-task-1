@@ -1,0 +1,12 @@
+.header__logo {
+  position: relative;
+  -webkit-transition: max-height 0.3s ease-in-out;
+  -o-transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
+}
+
+@media (max-width: 575px) {
+  .header__logo {
+    max-height: 50px;
+  }
+}

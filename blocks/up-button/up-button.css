@@ -1,0 +1,11 @@
+.up-button {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 50%;
+  background: no-repeat url(../../images/up-arrow.png) center center/contain;
+  height: 51px;
+  width: 100px;
+  width: 51px;
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.header__nav-links {
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+  grid-gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .header__nav-links {
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__nav-links {
+    grid-template-rows: repeat(3, 1fr);
+  }
+}

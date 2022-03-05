@@ -1,0 +1,8 @@
+.page {
+  margin: 0 auto;
+  min-width: 374px;
+  font-family: var(--main-font);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text-1);
+}

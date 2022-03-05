@@ -1,0 +1,7 @@
+.section-content__code {
+  margin: 16px 0 0;
+  font-size: 1.1rem;
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--color-text-3);
+}
