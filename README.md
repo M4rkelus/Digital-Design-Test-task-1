@@ -1,6 +1,6 @@
 # Проект: Cascading Style Sheets — каскадные таблицы стилей
 
-[ссылка на GitHub Pages]( "ссылка на GitHub Pages")
+[ссылка на GitHub Pages](https://m4rkelus.github.io/Digital-Design-Test-task-1/index.html "ссылка на GitHub Pages")
 
 ---
 
